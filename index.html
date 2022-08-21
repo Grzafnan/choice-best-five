@@ -13,7 +13,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-800">
     <!-- Header Section Start -->
     <header class="bg-black">
       <div class="grid grid-cols-12 gap-4">
@@ -38,7 +38,7 @@
       </div>
     </header>
     <!-- Header Section Start -->
-    <main class="bg-gray-800">
+    <main>
       <section class="grid grid-cols-12 gap-4 mx-36 mt-5">
         <!-- Left side  -->
         <div class="grid grid-cols-3 col-span-8 gap-4">
@@ -147,9 +147,10 @@
               <thead>
                 <tr>
                   <th></th>
-                  <th>Name</th>
-                  <th>Job</th>
-                  <th>Favorite Color</th>
+                  <th></th>
+                  <th class="text-2xl font-semibold">
+                    Selected - <span>5</span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -158,27 +159,94 @@
                   <th>1</th>
                   <td>Cy Ganderton</td>
                   <td>Quality Control Specialist</td>
-                  <td>Blue</td>
                 </tr>
                 <!-- row 2 -->
                 <tr>
                   <th>2</th>
                   <td>Ganderton</td>
                   <td>Control Specialist</td>
-                  <td>Blue</td>
                 </tr>
                 <!--  -->
                 <tr>
                   <th>3</th>
                   <td>Cy</td>
                   <td>Quality Specialist</td>
-                  <td>Blue</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <!-- budget  -->
+          <!-- <div class="bg-black text-center mt-4">
+            <h2 class="text-2xl font-semibold text-white">Budget</h2>
+            <img class="mx-auto mt-2" src="./image/marker-2.png" alt="" />
+          </div> -->
+          <!-- budget End  -->
+
+          <!-- buget section start  -->
+
+          <div class="bg-black text-white rounded-md mt-12 mb-12">
+            <div class="text-center">
+              <h1 class="text-3xl font-bold font-mono pt-6 text-center">
+                Budget
+              </h1>
+              <div class="mt-4 flex justify-evenly">
+                <p class="inline text-xl font-semibold">Per Player :</p>
+                <input
+                  class="inline rounded-md px-5 py-1 text-black"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Player buget"
+                />
+              </div>
+              <button
+                class="text-xl py-1 rounded-md hover:bg-sky-700 bg-sky-500 w-1/2 text-center mt-4"
+              >
+                Calculate
+              </button>
+
+              <div>
+                <h1 class="mt-4 text-2xl font-bold">
+                  Player Expenses : $<span>00</span>
+                </h1>
+              </div>
+              <div class="mt-4 flex justify-evenly">
+                <p class="inline text-xl font-semibold">Manager :</p>
+                <input
+                  class="inline rounded-md px-5 py-1 text-black"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="manager amount"
+                />
+              </div>
+              <div class="mt-4 flex justify-evenly">
+                <p class="inline text-xl font-semibold">Coach :</p>
+                <input
+                  class="inline rounded-md px-5 py-1 text-black"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Coach amount"
+                />
+              </div>
+              <button
+                class="text-xl py-1 rounded-md hover:bg-sky-700 bg-sky-500 w-1/2 text-center mt-4"
+              >
+                Calculate Total
+              </button>
+              <div class="">
+                <h1 class="mt-4 text-2xl font-bold">
+                  Total : $<span class="text-orange-600">00</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <!-- buget section end  -->
         </div>
       </section>
     </main>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
