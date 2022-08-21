@@ -54,7 +54,9 @@
                 <span class="font-semibold">120 Assist</span>
               </p>
               <div class="text-center mt-2">
-                <button class="w-full btn btn-primary">Buy Now</button>
+                <button class="w-full btn btn-primary select-btn">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
@@ -70,71 +72,85 @@
                 <span class="font-semibold">120 Assist</span>
               </p>
               <div class="text-center mt-2">
-                <button class="w-full btn btn-primary">Buy Now</button>
+                <button class="w-full btn btn-primary select-btn">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
           <!-- Card 3  -->
           <div class="bg-black text-white shadow-xl">
             <div>
-              <img class="w-full" src="./image/lionel-messi.png" alt="Shoes" />
+              <img class="w-full" src="./image/mbappe.png" alt="Shoes" />
             </div>
             <div class="card-body">
-              <h2 class="text-2xl font-semibold text-center">Lionel Messi</h2>
+              <h2 class="text-2xl font-semibold text-center">Kylian Mbappé</h2>
               <p class="text-center">
                 <span class="font-semibold">36 Goals</span> |
                 <span class="font-semibold">120 Assist</span>
               </p>
               <div class="text-center mt-2">
-                <button class="w-full btn btn-primary">Buy Now</button>
+                <button class="w-full btn btn-primary select-btn">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
           <!-- Card 4  -->
           <div class="bg-black text-white shadow-xl">
             <div>
-              <img class="w-full" src="./image/lionel-messi.png" alt="Shoes" />
+              <img class="w-full" src="./image/vítor-machado.png" alt="Shoes" />
             </div>
             <div class="card-body">
-              <h2 class="text-2xl font-semibold text-center">Lionel Messi</h2>
+              <h2 class="text-2xl font-semibold text-center">Vítor Machado</h2>
               <p class="text-center">
                 <span class="font-semibold">36 Goals</span> |
                 <span class="font-semibold">120 Assist</span>
               </p>
               <div class="text-center mt-2">
-                <button class="w-full btn btn-primary">Buy Now</button>
+                <button class="w-full btn btn-primary select-btn">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
           <!-- Card 5  -->
           <div class="bg-black text-white shadow-xl">
             <div>
-              <img class="w-full" src="./image/lionel-messi.png" alt="Shoes" />
+              <img class="w-full" src="./image/sergio-ramos.png" alt="Shoes" />
             </div>
             <div class="card-body">
-              <h2 class="text-2xl font-semibold text-center">Lionel Messi</h2>
+              <h2 class="text-2xl font-semibold text-center">Sergio Ramos</h2>
               <p class="text-center">
                 <span class="font-semibold">36 Goals</span> |
                 <span class="font-semibold">120 Assist</span>
               </p>
               <div class="text-center mt-2">
-                <button class="w-full btn btn-primary">Buy Now</button>
+                <button class="w-full btn btn-primary select-btn">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
           <!-- Card 6  -->
           <div class="bg-black text-white shadow-xl">
             <div>
-              <img class="w-full" src="./image/lionel-messi.png" alt="Shoes" />
+              <img
+                class="w-full"
+                src="./image/renato-sanches.png"
+                alt="Shoes"
+              />
             </div>
             <div class="card-body">
-              <h2 class="text-2xl font-semibold text-center">Lionel Messi</h2>
+              <h2 class="text-2xl font-semibold text-center">Renato Sanches</h2>
               <p class="text-center">
                 <span class="font-semibold">36 Goals</span> |
                 <span class="font-semibold">120 Assist</span>
               </p>
               <div class="text-center mt-2">
-                <button class="w-full btn btn-primary">Buy Now</button>
+                <button class="w-full btn btn-primary select-btn">
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
@@ -149,29 +165,12 @@
                   <th></th>
                   <th></th>
                   <th class="text-2xl font-semibold">
-                    Selected - <span>5</span>
+                    Selected - <span id="selected-total">0</span>
                   </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="body-container">
                 <!-- row 1 -->
-                <tr>
-                  <th>1</th>
-                  <td>Cy Ganderton</td>
-                  <td>Quality Control Specialist</td>
-                </tr>
-                <!-- row 2 -->
-                <tr>
-                  <th>2</th>
-                  <td>Ganderton</td>
-                  <td>Control Specialist</td>
-                </tr>
-                <!--  -->
-                <tr>
-                  <th>3</th>
-                  <td>Cy</td>
-                  <td>Quality Specialist</td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -246,7 +245,7 @@
         </div>
       </section>
     </main>
-
+    <script src="./js/utilities.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
