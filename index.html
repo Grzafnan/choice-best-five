@@ -193,12 +193,12 @@
                 <input
                   class="inline rounded-md px-5 py-1 text-black"
                   type="text"
-                  name=""
-                  id=""
-                  placeholder="Player buget"
+                  id="player-budget"
+                  placeholder="Player budget amount"
                 />
               </div>
               <button
+                id="calculate"
                 class="text-xl py-1 rounded-md hover:bg-sky-700 bg-sky-500 w-1/2 text-center mt-4"
               >
                 Calculate
@@ -206,7 +206,7 @@
 
               <div>
                 <h1 class="mt-4 text-2xl font-bold">
-                  Player Expenses : $<span>00</span>
+                  Player Expenses : $<span id="player-expense">00</span>
                 </h1>
               </div>
               <div class="mt-4 flex justify-evenly">
@@ -214,8 +214,7 @@
                 <input
                   class="inline rounded-md px-5 py-1 text-black"
                   type="text"
-                  name=""
-                  id=""
+                  id="manager-amount"
                   placeholder="manager amount"
                 />
               </div>
@@ -224,19 +223,19 @@
                 <input
                   class="inline rounded-md px-5 py-1 text-black"
                   type="text"
-                  name=""
-                  id=""
+                  id="coach-amount"
                   placeholder="Coach amount"
                 />
               </div>
               <button
+                id="calculate-total"
                 class="text-xl py-1 rounded-md hover:bg-sky-700 bg-sky-500 w-1/2 text-center mt-4"
               >
                 Calculate Total
               </button>
-              <div class="">
+              <div>
                 <h1 class="mt-4 text-2xl font-bold">
-                  Total : $<span class="text-orange-600">00</span>
+                  Total : $<span id="total" class="text-orange-600">00</span>
                 </h1>
               </div>
             </div>
@@ -247,5 +246,6 @@
     </main>
     <script src="./js/utilities.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./budget.js"></script>
   </body>
 </html>
