@@ -9,7 +9,7 @@ for (selector of selectBtn) {
 
     if (count > 5) {
       const selected = event.target.removeAttribute('disabled');
-      alert("You Can't Added More Then 5 Player");
+      alert("You Can't Added More lien 5 Player");
       return;
     }
 
@@ -20,11 +20,10 @@ for (selector of selectBtn) {
 
     const mainContainer = document.getElementById("body-container");
 
-    const bodyContainer = document.createElement("tr");
+    const bodyContainer = document.createElement("ol");
     bodyContainer.innerHTML = `
-       <th scope="row">${count}</th>
-       <td>  </td>
-       <td>${playerName}</td>
+       <li class="inline-block mx-8 my-2 text-lg font-semibold">${count}</li>
+       <li class="inline-block mx-8 my-2 text-lg font-semibold">${playerName}</li>
        `;
     mainContainer.appendChild(bodyContainer);
   })
