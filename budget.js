@@ -1,5 +1,5 @@
 document.getElementById('calculate').addEventListener('click', function () {
-  let playerValue = getInputValueById('player-budget');
+  const playerValue = getInputValueById('player-budget');
 
   if (isNaN(playerValue)) {
     alert('Please Provide a Number');
@@ -10,22 +10,22 @@ document.getElementById('calculate').addEventListener('click', function () {
     return;
   }
 
-  let selectedPlayerTotal = getElementById('selected-total');
+  const selectedPlayerTotal = getElementById('selected-total');
 
-  let totalPlayerExpenseAmount = playerValue * selectedPlayerTotal;
+  const totalPlayerExpenseAmount = playerValue * selectedPlayerTotal;
 
-  let playerExpenses = setElementValueById('player-expense', totalPlayerExpenseAmount);
+  const playerExpenses = setElementValueById('player-expense', totalPlayerExpenseAmount);
 
 })
 
 // Calculate Total 
 
 document.getElementById('calculate-total').addEventListener('click', function () {
-  let managerAmountValue = getInputValueById('manager-amount');
+  const managerAmountValue = getInputValueById('manager-amount');
 
-  let coachAmountValue = getInputValueById('coach-amount');
+  const coachAmountValue = getInputValueById('coach-amount');
 
-  let playerExpensesTotal = getElementById('player-expense');
+  const playerExpensesTotal = getElementById('player-expense');
 
   if (managerAmountValue < 0) {
     alert("Please Provide Positive Number");
@@ -44,9 +44,9 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     return;
   }
 
-  let totalAmount = managerAmountValue + coachAmountValue + playerExpensesTotal;
+  const totalAmount = managerAmountValue + coachAmountValue + playerExpensesTotal;
 
-  let total = document.getElementById('total');
+  const total = document.getElementById('total');
   total.innerText = totalAmount;
 
 })
