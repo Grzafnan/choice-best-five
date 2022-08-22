@@ -1,26 +1,26 @@
 let count = 0;
-let selectBtn = document.getElementsByClassName('select-btn');
+const selectBtn = document.getElementsByClassName('select-btn');
 
 for (selector of selectBtn) {
   selector.addEventListener('click', function (event) {
     count++;
-    let playerName = event.target.parentNode.parentNode.childNodes[1].innerText;
-    let selected = event.target.setAttribute('disabled', '');
+    const playerName = event.target.parentNode.parentNode.childNodes[1].innerText;
+    const selected = event.target.setAttribute('disabled', '');
 
     if (count > 5) {
-      let selected = event.target.removeAttribute('disabled');
+      const selected = event.target.removeAttribute('disabled');
       alert("You Can't Added More Then 5 Player");
       return;
     }
 
-    let selectedPlayer = document.getElementById('selected-total');
-    let totalSelectedPlayer = parseFloat(selectedPlayer.innerText);
+    const selectedPlayer = document.getElementById('selected-total');
+    const totalSelectedPlayer = parseFloat(selectedPlayer.innerText);
     selectedPlayer.innerText = count;
 
 
-    let mainContainer = document.getElementById("body-container");
+    const mainContainer = document.getElementById("body-container");
 
-    let bodyContainer = document.createElement("tr");
+    const bodyContainer = document.createElement("tr");
     bodyContainer.innerHTML = `
        <th scope="row">${count}</th>
        <td>  </td>
